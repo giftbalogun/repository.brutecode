@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.giftbalogun" name="GiftBalogun Repository" version="1.0" provider-name="GiftBalogun">
+<addon id="repository.brutekodi" name="GiftBalogun Repository" version="1.0" provider-name="GiftBalogun">
     <extension point="xbmc.addon.repository" name="GiftBalogun Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml</info>
@@ -8,19 +8,19 @@
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-      <summary lang="en">My Personal Kodi Repository</summary>
-      <description lang="en">Kodi Repository Fully Loaded</description>
-      <disclaimer lang="en">Personal Repo</disclaimer>
-      <language>en</language>
-      <platform>all</platform>
-      <license />
-      <forum>https://giftbalogun.github.io/</forum>
-      <website>https://giftbalogun.github.io/</website>
-      <email>blgnbalogun53@gmail.com</email>
-      <source>https://giftbalogun.github.io/</source>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
+		<summary>My Personal Kodi Repository</summary>
+		<description>Kodi Repository Fully Loaded</description>
+		<disclaimer>Personal Repo</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license />
+		<forum>https://giftbalogun.github.io/</forum>
+		<website>https://giftbalogun.github.io/</website>
+		<email>blgnbalogun53@gmail.com</email>
+		<source>https://giftbalogun.github.io/</source>
+		<assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+		</assets>
     </extension>
 </addon>
