@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.giftbalogun" name="GiftRepository" version="1.0" provider-name="GiftBalogun">
-    <extension point="xbmc.addon.repository" name="GiftBalogun Repository">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>BruteCode Repo</summary>
-        <description>Home of BruteCode</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.brutekodi" name="GiftBalogun Repository" version="1.0" provider-name="GiftBalogun">
+   <requires>
+      <import addon="xbmc.python" version="2.20.0" />
+   </requires>
+   <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>video</provides>
+   </extension>
+   <extension point="xbmc.addon.metadata">
+      <summary lang="en">My Personal Kodi Repository</summary>
+      <description lang="en">Kodi Repository Fully Loaded</description>
+      <disclaimer lang="en">Personal Repo</disclaimer>
+      <language>en</language>
+      <platform>all</platform>
+      <license />
+      <forum>https://giftbalogun.github.io/</forum>
+      <website>https://giftbalogun.github.io/</website>
+      <email>blgnbalogun53@gmail.com</email>
+      <source>https://giftbalogun.github.io/</source>
+   </extension>
 </addon>
