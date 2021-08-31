@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="repository.brutekodi" name="GiftBalogun Repository" version="1.0" provider-name="GiftBalogun">
-   <requires>
-      <import addon="xbmc.python" version="2.20.0" />
-   </requires>
+
    <extension point="xbmc.python.pluginsource" library="addon.py">
       <provides>video</provides>
    </extension>
