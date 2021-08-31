@@ -1,0 +1,17 @@
+{
+    "sites": [
+        {
+            "name": "2 Broke Girl",
+            "poster": "",
+            "fanart": "",
+            "items": {
+                "Series": {
+                    "site_url": "https://o2tvseries.com/2-Broke-Girls-9",
+                    "global": "<div class='data_list'>{%}</div>",
+                    "pattern": "<div class='data'>{*} href='{%}'>{%}</a></div>",
+                    "name": "{%2}"
+                }
+            }
+        }
+    ]
+}
