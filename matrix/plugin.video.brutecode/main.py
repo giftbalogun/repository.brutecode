@@ -19,18 +19,18 @@ _HANDLE = int(sys.argv[1])
 # Here we use a fixed set of properties simply for demonstrating purposes
 # In a "real life" plugin you will need to get info and links to video files/streams
 # from some web-site or online service.
-VIDEOS = {'2 Broke Girls': [{'name': 'Crab',
+VIDEOS = {'2 Broke Girls': [{'name': 'Episode 1',
                        'thumb': 'https://o2tvseries.com/res/tv_serials/56.jpg',
                        'video': 'http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E01%20(O2TvSeries.Com).mp4',
-                       'genre': '2 Broke Girls'},
-                      {'name': 'Alligator',
+                       'genre': 'Comedy'},
+                      {'name': 'Episode 2',
                        'thumb': 'https://o2tvseries.com/res/tv_serials/56.jpg',
                        'video': 'http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E02%20(O2TvSeries.Com).mp4',
-                       'genre': '2 Broke Girls'},
-                      {'name': 'Turtle',
+                       'genre': 'Comedy'},
+                      {'name': 'Episode 3',
                        'thumb': 'https://o2tvseries.com/res/tv_serials/56.jpg',
                        'video': 'http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E03%20(O2TvSeries.Com).mp4',
-                       'genre': '2 Broke Girls'}
+                       'genre': 'Comedy'}
                       ],
             'Cars': [{'name': 'Postal Truck',
                       'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal-screenshot.jpg',
