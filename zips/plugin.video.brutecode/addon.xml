@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.brutecode" name="BruteCode Video" version="0.0.1" provider-name="giftbalogun">
+<addon id="plugin.video.brutecode" name="BruteCode Video" version="1.0.0" provider-name="giftbalogun">
    <requires>
-      <import addon="xbmc.python" version="3.0.0" />
-      <import addon="script.module.requests" version="2.9.1" />
-      <import addon="script.module.pil" version="1.1.7" />
+        <import addon="xbmc.python" version="3.0.0" />
    </requires>
    <extension point="xbmc.python.pluginsource" library="default.py">
-      <provides>video</provides>
+        <provides>video</provides>
    </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Gift Repository For BruteCode</summary>
