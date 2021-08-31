@@ -2,9 +2,19 @@
 <addon id="repository.brutekodi" name="BruteKodi Repository" version="1.0" provider-name="giftbalogun">
     <extension point="xbmc.addon.repository" name="BruteKodi Repository">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/repo/zips/</datadir>
+        </dir>
+        <dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/leia/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/matrix/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">

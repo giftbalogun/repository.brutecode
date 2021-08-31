@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.brutekodi" name="BruteKodi Repository" version="1.0" provider-name="giftbalogun">
+    <extension point="xbmc.addon.repository" name="BruteKodi Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>BruteKodi Repository</summary>
+        <description>Kodi Repository Fully Loaded</description>
+        <disclaimer>Personal Repo</disclaimer>
+        <platform>all</platform>
+        <forum>https://giftbalogun.github.io/</forum>
+		<website>https://giftbalogun.github.io/</website>
+		<email>blgnbalogun53@gmail.com</email>
+		<source>https://giftbalogun.github.io/</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

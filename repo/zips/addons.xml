@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+	<addon id="plugin.video.brutecode" name="BruteCode Video" version="1.0.0" provider-name="giftbalogun">
+		<requires>
+			<import addon="xbmc.python" version="3.0.0" />
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>
+				video
+			</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>
+				BruteCode Video
+			</summary>
+			<description>
+				Home of BruteCode Addons on Kodi
+			</description>
+			<disclaimer>
+			</disclaimer>
+			<platform>
+				all
+			</platform>
+			<assets>
+				<icon>
+					icon.png
+				</icon>
+				<fanart>
+					fanart.jpg
+				</fanart>
+			</assets>
+		</extension>
+	</addon>
+	<addon id="plugin.video.themoviedb.helper" version="1.0.0" name="TheMovieDb Helper" provider-name="giftbalogun">
+		<requires>
+			<import addon="xbmc.python" version="3.0.0" />
+			<import addon="script.module.requests" version="2.9.1" />
+			<import addon="script.module.pil" version="1.1.7" />
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="plugin.py">
+			<provides>
+				video
+			</provides>
+		</extension>
+		<extension point="xbmc.python.script" library="script.py" />
+		<extension point="xbmc.service" library="service.py" />
+		<extension point="kodi.context.item">
+			<menu id="kodi.core.main">
+				<item library="context-playusing.py">
+					<label>
+						$ADDON[plugin.video.themoviedb.helper 32322]
+					</label>
+					<visible>
+						!String.IsEmpty(ListItem.Property(tmdbhelper.context.playusing))
+					</visible>
+				</item>
+				<item library="context-related.py">
+					<label>
+						$ADDON[plugin.video.themoviedb.helper 32235]
+					</label>
+					<visible>
+						!String.IsEmpty(ListItem.Property(tmdbhelper.context.related))
+					</visible>
+				</item>
+				<item library="context-addlibrary.py">
+					<label>
+						$LOCALIZE[20444]
+					</label>
+					<visible>
+						!String.IsEmpty(ListItem.Property(tmdbhelper.context.addlibrary))
+					</visible>
+				</item>
+				<item library="context-trakt.py">
+					<label>
+						$ADDON[plugin.video.themoviedb.helper 32295]
+					</label>
+					<visible>
+						!String.IsEmpty(ListItem.Property(tmdbhelper.context.trakt))
+					</visible>
+				</item>
+				<item library="context-refresh.py">
+					<label>
+						$ADDON[plugin.video.themoviedb.helper 32233]
+					</label>
+					<visible>
+						!String.IsEmpty(ListItem.Property(tmdbhelper.context.refresh))
+					</visible>
+				</item>
+				<item library="context-artwork.py">
+					<label>
+						$ADDON[plugin.video.themoviedb.helper 32222]
+					</label>
+					<visible>
+						!String.IsEmpty(ListItem.Property(tmdbhelper.context.artwork))
+					</visible>
+				</item>
+				<item library="context-sorting.py">
+					<label>
+						$ADDON[plugin.video.themoviedb.helper 32309]
+					</label>
+					<visible>
+						!String.IsEmpty(ListItem.Property(tmdbhelper.context.sorting))
+					</visible>
+				</item>
+			</menu>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>
+				TheMovieDb Helper
+			</summary>
+			<description>
+				TheMovieDb Helper provides details about movies, tvshows and actors from TMDb. Users can access a variety of lists from TMDb and Trakt.
+			</description>
+			<disclaimer>
+				Provided by TheMovieDb and Trakt.
+			</disclaimer>
+			<license>
+				GPL-3.0-or-later
+			</license>
+			<website>
+				https://github.com/jurialmunkey/plugin.video.themoviedb.helper
+			</website>
+			<forum>
+				https://forum.kodi.tv/showthread.php?tid=345847
+			</forum>
+			<assets>
+				<icon>
+					icon.png
+				</icon>
+				<fanart>
+					fanart.jpg
+				</fanart>
+				<screenshot>
+					resources/screenshot-01.jpg
+				</screenshot>
+				<screenshot>
+					resources/screenshot-02.jpg
+				</screenshot>
+			</assets>
+			<news>
+				Add some additional dbid checking based on title/year combo
+			</news>
+		</extension>
+	</addon>
+	<addon id="repository.brutekodi" name="BruteKodi Repository" version="1.0" provider-name="giftbalogun">
+		<extension point="xbmc.addon.repository" name="BruteKodi Repository">
+			<dir>
+				<info compressed="false">
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml
+				</info>
+				<checksum>
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/addons.xml.md5
+				</checksum>
+				<datadir zip="true">
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/zips/
+				</datadir>
+			</dir>
+			<dir minversion="18.0" maxversion="18.9.0">
+				<info compressed="false">
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/leia/zips/addons.xml
+				</info>
+				<checksum>
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/leia/zips/addons.xml.md5
+				</checksum>
+				<datadir zip="true">
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/leia/zips/
+				</datadir>
+			</dir>
+			<dir minversion="18.9.0">
+				<info compressed="false">
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/matrix/zips/addons.xml
+				</info>
+				<checksum>
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/matrix/zips/addons.xml.md5
+				</checksum>
+				<datadir zip="true">
+					https://raw.githubusercontent.com/giftbalogun/repository.brutekodi/main/matrix/zips/
+				</datadir>
+				</di
+			</dir>
+			<extension point="xbmc.addon.metadata">
+				<summary>
+					BruteKodi Repository
+				</summary>
+				<description>
+					Kodi Repository Fully Loaded
+				</description>
+				<disclaimer>
+					Personal Repo
+				</disclaimer>
+				<platform>
+					all
+				</platform>
+				<forum>
+					https://giftbalogun.github.io/
+				</forum>
+				<website>
+					https://giftbalogun.github.io/
+				</website>
+				<email>
+					blgnbalogun53@gmail.com
+				</email>
+				<source>
+					https://giftbalogun.github.io/
+				</source>
+				<assets>
+					<icon>
+						icon.png
+					</icon>
+					<fanart>
+						fanart.jpg
+					</fanart>
+				</assets>
+			</extension>
+		</extension>
+	</addon>
+	'
+</addons>

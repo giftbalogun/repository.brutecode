@@ -41,7 +41,6 @@ class Generator:
         if not os.path.exists(addon_folder):
             os.makedirs(addon_folder)
 
-        #final_zip = os.path.join('zips',addon_id,'%s-%s.zip' % (addon_id,version))
         final_zip = os.path.join('zips', addon_id, "{0}-{1}.zip".format(addon_id, version))
         if not os.path.exists(final_zip):
             print("CREATING ZIP FOR: {0}-version={1}".format(addon_id, version))
