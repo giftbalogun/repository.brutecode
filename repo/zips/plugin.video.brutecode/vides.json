@@ -1,0 +1,62 @@
+{
+    "2 Broke Girls": [
+        {
+            "name": "Episode 1",
+            "thumb": "https://o2tvseries.com/res/tv_serials/56.jpg",
+            "video": "http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E01%20(O2TvSeries.Com).mp4",
+            "genre": "Comedy"
+        },
+        {
+            "name": "Episode 2",
+            "thumb": "https://o2tvseries.com/res/tv_serials/56.jpg",
+            "video": "http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E02%20(O2TvSeries.Com).mp4",
+            "genre": "Comedy"
+        },
+        {
+            "name": "Episode 3",
+            "thumb": "https://o2tvseries.com/res/tv_serials/56.jpg",
+            "video": "http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E03%20(O2TvSeries.Com).mp4",
+            "genre": "Comedy"
+        }
+    ],
+    "Cars": [
+        {
+            "name": "Postal Truck",
+            "thumb": "http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal-screenshot.jpg",
+            "video": "http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal.mp4",
+            "genre": "Cars"
+        },
+        {
+            "name": "Traffic",
+            "thumb": "http://www.vidsplay.com/wp-content/uploads/2017/05/traffic1-screenshot.jpg",
+            "video": "http://www.vidsplay.com/wp-content/uploads/2017/05/traffic1.mp4",
+            "genre": "Cars"
+        },
+        {
+            "name": "Traffic Arrows",
+            "thumb": "http://www.vidsplay.com/wp-content/uploads/2017/05/traffic_arrows-screenshot.jpg",
+            "video": "http://www.vidsplay.com/wp-content/uploads/2017/05/traffic_arrows.mp4",
+            "genre": "Cars"
+        }
+    ],
+    "Food": [
+        {
+            "name": "Chicken",
+            "thumb": "http://www.vidsplay.com/wp-content/uploads/2017/05/bbq_chicken-screenshot.jpg",
+            "video": "http://www.vidsplay.com/wp-content/uploads/2017/05/bbqchicken.mp4",
+            "genre": "Food"
+        },
+        {
+            "name": "Hamburger",
+            "thumb": "http://www.vidsplay.com/wp-content/uploads/2017/05/hamburger-screenshot.jpg",
+            "video": "http://www.vidsplay.com/wp-content/uploads/2017/05/hamburger.mp4",
+            "genre": "Food"
+        },
+        {
+            "name": "Pizza",
+            "thumb": "http://www.vidsplay.com/wp-content/uploads/2017/05/pizza-screenshot.jpg",
+            "video": "http://www.vidsplay.com/wp-content/uploads/2017/05/pizza.mp4",
+            "genre": "Food"
+        }
+    ]
+}

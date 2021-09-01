@@ -1,12 +1,6 @@
-# Module: main
-# Author: Roman V. M.
-# Created on: 28.11.2014
-# License: GPL v.3 https://www.gnu.org/copyleft/gpl.html
-"""
-Example video plugin that is compatible with Kodi 19.x "Matrix" and above
-"""
 import sys
 from urllib.parse import urlencode, parse_qsl
+import requests
 import xbmcgui
 import xbmcplugin
 
@@ -19,46 +13,10 @@ _HANDLE = int(sys.argv[1])
 # Here we use a fixed set of properties simply for demonstrating purposes
 # In a "real life" plugin you will need to get info and links to video files/streams
 # from some web-site or online service.
-VIDEOS = {'2 Broke Girls': [{'name': 'Episode 1',
-                       'thumb': 'https://o2tvseries.com/res/tv_serials/56.jpg',
-                       'video': 'http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E01%20(O2TvSeries.Com).mp4',
-                       'genre': 'Comedy'},
-                      {'name': 'Episode 2',
-                       'thumb': 'https://o2tvseries.com/res/tv_serials/56.jpg',
-                       'video': 'http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E02%20(O2TvSeries.Com).mp4',
-                       'genre': 'Comedy'},
-                      {'name': 'Episode 3',
-                       'thumb': 'https://o2tvseries.com/res/tv_serials/56.jpg',
-                       'video': 'http://d8.o2tv.org/2%20Broke%20Girls/Season%2001/2%20Broke%20Girls%20-%20S01E03%20(O2TvSeries.Com).mp4',
-                       'genre': 'Comedy'}
-                      ],
-            'Cars': [{'name': 'Postal Truck',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal.mp4',
-                      'genre': 'Cars'},
-                     {'name': 'Traffic',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic1-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic1.mp4',
-                      'genre': 'Cars'},
-                     {'name': 'Traffic Arrows',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic_arrows-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic_arrows.mp4',
-                      'genre': 'Cars'}
-                     ],
-            'Food': [{'name': 'Chicken',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/bbq_chicken-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/bbqchicken.mp4',
-                      'genre': 'Food'},
-                     {'name': 'Hamburger',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/hamburger-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/hamburger.mp4',
-                      'genre': 'Food'},
-                     {'name': 'Pizza',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/pizza-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/pizza.mp4',
-                      'genre': 'Food'}
-                     ]}
 
+data = requests.get('https://kodi.giftbalogun.name.ng/vides.json').json()
+
+VIDEOS = data
 
 def get_url(**kwargs):
     """
@@ -149,7 +107,6 @@ def list_categories():
     # Finish creating a virtual folder.
     xbmcplugin.endOfDirectory(_HANDLE)
 
-
 def list_videos(category):
     """
     Create the list of playable videos in the Kodi interface.
@@ -194,11 +151,9 @@ def list_videos(category):
     # Finish creating a virtual folder.
     xbmcplugin.endOfDirectory(_HANDLE)
 
-
 def play_video(path):
     """
     Play a video by the provided path.
-
     :param path: Fully-qualified video URL
     :type path: str
     """
@@ -207,12 +162,10 @@ def play_video(path):
     # Pass the item to the Kodi player.
     xbmcplugin.setResolvedUrl(_HANDLE, True, listitem=play_item)
 
-
 def router(paramstring):
     """
     Router function that calls other functions
     depending on the provided paramstring
-
     :param paramstring: URL encoded plugin paramstring
     :type paramstring: str
     """
@@ -236,7 +189,6 @@ def router(paramstring):
         # If the plugin is called from Kodi UI without any parameters,
         # display the list of video categories
         list_categories()
-
 
 if __name__ == '__main__':
     # Call the router function and pass the plugin call parameters to it.
