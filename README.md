@@ -37,7 +37,7 @@
 
 ## :dart: About ##
 
-Describe your projec
+This is a Kodi Addons Library, i am not afflilated with Kudi in anyway.
 ## :sparkles: Features ##
 
 :heavy_check_mark: Feature 1;\
