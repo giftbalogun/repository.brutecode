@@ -7,7 +7,6 @@
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/giftbalogun/repository.brutecode?color=56BEB8">
-  https://img.shields.io/badge/giftbalogun-HelloWorld-red
 
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/giftbalogun/repository.brutecode?color=56BEB8">
 
