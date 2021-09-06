@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+	<addon id="plugin.video.dstvnow" name="DStv Now" provider-name="giftbalogun" version="1.0.0">
+		<requires>
+			<import addon="script.module.brutecode" />
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py" provides="video">
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<description lang="en">Watch your favourite content from DStv. Subscription required.</description>
+			<reuselanguageinvoker>true</reuselanguageinvoker>
+			<license></license>
+			<language />
+			<website></website>
+			<news>Add Flatten Single Season setting</news>
+			<assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+			</assets>
+		</extension>
+	</addon>
 	<addon id="script.module.brutecode" name="BruteCode Common" provider-name="giftbalogun" version="1.0.0">
 		<requires>
 			<import addon="repository.brutecode" />
